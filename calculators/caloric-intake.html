@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Caloric Intake Calculator | StudyStrong</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/caloric-intake.css" />
+	</head>
+
+	<!-- Navbar -->
+	<header>
+		<div id="navbar"></div>
+	</header>
+
+	<body>
+		<main class="energy-page">
+			<h1>Caloric Intake Calculator</h1>
+			<div class="energy-flex">
+				<!-- Calculator box -->
+				<div class="calc-box">
+					<div class="unit-toggle">
+						<button id="metric-btn" class="active">Metric</button>
+						<button id="imperial-btn">Imperial</button>
+					</div>
+					<label>Gender</label>
+					<select id="gender">
+						<option value="">Select</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+					<label>Age (years)</label>
+					<input type="number" id="age" />
+					<label>Weight (<span id="weight-unit">kg</span>)</label>
+					<input type="number" id="weight" />
+					<label>Physical Activity Level</label>
+					<select id="activity">
+						<option value="">Select</option>
+						<option value="sedentary">Sedentary</option>
+						<option value="moderate">Moderate</option>
+						<option value="active">Active</option>
+					</select>
+					<button id="calc-energy">Calculate</button>
+				</div>
+				<!-- Result box -->
+				<div class="result-box">
+					<p>Your daily intake should be</p>
+					<br>
+					<br>
+					<h2 id="kJ-result">--</h2>
+					<br>
+					<br>
+          <br>
+					<p id="protein-msg">Enter details to get your result</p>
+				</div>
+			</div>
+			<!-- Tips -->
+			<section class="tips">
+				<h3>Tips</h3>
+				<p>Energy requirements vary with age, gender, body size and activity levels.</p>
+				<p>The energy calculator estimates your daily energy needs based on metabolic functions and physical activity.</p>
+				<p>The results are only estimates and may not reflect specific needs related to medical conditions, stress, or hormonal changes.</p>
+				<p>For the most accurate guidance, it's best to combine calculator results with advice from a qualified health professional or dietitian.</p>
+			</section>
+			<!-- FAQ -->
+			<section class="faq">
+				<h3>Limitations & Further Information</h3>
+				<div class="accordion">
+					<div class="accordion-item">
+						<button class="accordion-btn">What are the limitations of the calculator?</button>
+						<div class="accordion-content">
+							<p>This calculator provides estimates based on general population averages and doesn't account for individual factors like muscle mass, metabolic rate, or specific medical conditions. It should be used as a starting point rather than a precise measurement.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button class="accordion-btn">How can I use this tool to create a target intake for weight loss/gain?</button>
+						<div class="accordion-content">
+							<p>Once you know your estimated daily energy needs, you can adjust your intake by reducing or increasing calories to create a deficit or surplus. A typical guideline is to aim for a 500-calorie difference per day for gradual, sustainable weight change.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button class="accordion-btn">I want to learn more about this tool, what can I look at?</button>
+						<div class="accordion-content">
+							<p>You can explore resources from trusted health organizations like the Australian Dietary Guidelines or talk to a registered dietitian. Learning about basal metabolic rate (BMR), activity levels, and macronutrient distribution can also help you make the most of this tool.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<div id="footer"></div>
+
+		<script src="/js/caloric-intake.js"></script>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
