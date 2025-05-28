@@ -1,0 +1,154 @@
+/* Overall page setup */
+.layout {
+  display: flex;
+  padding: 30px;
+}
+
+/* Sidebar Filters */
+.filters {
+  width: 250px;
+  padding: 20px;
+  border: 2px solid #c8e4f5;
+  background: #eef8ff;
+  margin-right: 40px;
+}
+
+.filters label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Search Area */
+.search-area {
+  flex: 1;
+}
+
+.search-area h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search-box-large {
+  background: #d7ecf9;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-box-large h2 {
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input-group input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.input-group button {
+  background: #7ca9cc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Recipe results */
+.recipe-results {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.recipe-results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.recipe-results::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.recipe-results li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.recipe-results img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.recipe-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+.recipe-check {
+  transform: scale(1.6);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.filters input[type="range"] {
+  width: 100%;
+}
+
+.generate-btn {
+  margin-top: 30px;
+  padding: 12px;
+  width: 100%;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #005fa3;
+}
